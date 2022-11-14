@@ -6,8 +6,10 @@ button.addEventListener("click", function() {
     const b = Math.floor(Math.random() * 255);
     const newColor = `rgb(${r}, ${g}, ${b})`;
     document.body.style.backgroundColor = newColor;
-    h1.innerText = newColor;
-    if ((r < 50 && g < 50) || (g < 50 && b < 50) || (r < 50 && b < 50)) {
-        h1.style.color = rgb(255, 255, 255);
+    if (r < 90 && g < 90 && b < 90) {
+        h1.style.color = "white";
+    } else {
+        h1.style.color = "black";
     }
+    h1.innerText = newColor;
 });
